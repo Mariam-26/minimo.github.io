@@ -1,0 +1,170 @@
+:root {
+  --gris1: rgb(233, 233, 233); /* bg gris sur les sections */
+  --gris2: rgb(155, 155, 155); /*  le gris moyen (h2) */
+  --gris3: rgb(90, 90, 90); /* les paragraphes et h3 */
+}
+TO DO
+/* le reste {font-family: 'Times New Roman', Times, serif;} et 
+
+h2
+{font-family: }Verdana, Geneva, Tahoma, sans-serif; 
+
+TITRE
+*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* style pr CONTAINER */
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+/* style pr les COL */
+
+.col-6 {
+  display: flex;
+}
+.col-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* style pr HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+header nav {
+  margin: 40px;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header nav a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: var(--gris2);
+  font-family: "Times New Roman", Times, serif;
+  transition: 2s;
+}
+
+header nav a:hover {
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+.para {
+  text-transform: uppercase;
+  font-size: 9px;
+  font-family: "Times New Roman", Times, serif;
+}
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--gris2);
+  letter-spacing: 1px;
+  margin: 20px;
+}
+
+h3 {
+  color: var(--gris3);
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
+  color: var(--gris3);
+  font-family: "Times New Roman", Times, serif;
+}
+
+form {
+  height: 20vh;
+  background-color: var(--gris1);
+  text-align: center;
+  padding-top: 20px;
+}
+form a {
+  text-decoration: none;
+  color: var(--gris3);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+  padding: 5px;
+  border-bottom: 2px solid rgb(17, 12, 12);
+}
+form i {
+  color: #000;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+label {
+  font-size: 2rem;
+  margin: 5opx;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* style pr le bouton */
+
+.button {
+  height: 20vh;
+  margin: 100px 600px;
+}
+.button a {
+  border: 1px solid black;
+  text-decoration: none;
+  color: var(--gris3);
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+/* style pr le footer  */
+footer {
+  display: flex;
+  background-color: var(--gris1);
+  height: 8vh;
+  justify-content: center;
+  margin-top: 100px;
+}
+footer .fo {
+  margin-right: 500px;
+  padding: 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--gris3);
+  font-family: "Times New Roman", Times, serif;
+}
+footer div {
+  padding: 20px;
+  margin-right: 25px;
+}
+.fa-facebook,
+.fa-twitter,
+.fa-instagram-square {
+  margin-right: 12px;
+  color: var(--gris3);
+  font-size: 1.2rem;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram-square:hover {
+  color: #000;
+}
+.follow {
+  margin: 30px;
+  font-size: 1rem;
+  color: var(--gris3);
+  text-decoration: none;
+}
